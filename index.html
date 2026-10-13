@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Rasya Nur Alif</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pitch: '#0a0a0a',
+                        charcoal: '#121212',
+                        carddark: '#18181b',
+                        slategray: '#64748b',
+                        silver: '#e2e8f0',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e2e8f0;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #27272a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3f3f46;
+        }
+    </style>
+</head>
+<body class="bg-pitch text-silver antialiased selection:bg-neutral-700 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-pitch/80 backdrop-blur-md border-b border-neutral-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#hero" class="font-bold tracking-wider text-white text-lg flex items-center gap-2">
+                <i class="fa-solid fa-terminal text-neutral-400"></i> RASYA.TKJ
+            </a>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-neutral-400">
+                <a href="#hero" class="hover:text-white transition">Beranda</a>
+                <a href="#about" class="hover:text-white transition">Tentang</a>
+                <a href="#education" class="hover:text-white transition">Pendidikan</a>
+                <a href="#skills" class="hover:text-white transition">Keahlian</a>
+                <a href="#contact" class="hover:text-white transition">Kontak</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-neutral-400 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-charcoal border-b border-neutral-800 px-6 py-4 space-y-3 text-sm">
+            <a href="#hero" class="block text-neutral-300 hover:text-white mobile-link">Beranda</a>
+            <a href="#about" class="block text-neutral-300 hover:text-white mobile-link">Tentang</a>
+            <a href="#education" class="block text-neutral-300 hover:text-white mobile-link">Pendidikan</a>
+            <a href="#skills" class="block text-neutral-300 hover:text-white mobile-link">Keahlian</a>
+            <a href="#contact" class="block text-neutral-300 hover:text-white mobile-link">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-6xl mx-auto px-6 pt-28 pb-16 space-y-32">
+
+        <!-- 1. Hero Section -->
+        <section id="hero" class="min-h-[calc(100vh-7rem)] flex flex-col md:flex-row items-center justify-center gap-12 pt-10">
+            <div class="flex-1 space-y-6 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-xs font-medium text-neutral-400">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Available for Network & IT Support
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Rasya Nur Alif
+                </h1>
+                <p class="text-lg md:text-xl font-medium text-neutral-400">
+                    Siswa Kelas XII TKJ | Computer & Network Technician - SMK 3 Perguruan Cikini
+                </p>
+                <p class="text-neutral-500 text-sm md:text-base max-w-lg mx-auto md:mx-0">
+                    Berfokus pada infrastruktur jaringan, perakitan perangkat keras, sistem operasi, serta administrasi server dan keamanan jaringan.
+                </p>
+                <div class="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-4">
+                    <a href="#contact" class="px-6 py-3 rounded-lg bg-neutral-200 text-neutral-900 font-semibold hover:bg-white transition shadow-lg shadow-neutral-900/50">
+                        Hubungi Saya <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                    <a href="#about" class="px-6 py-3 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-300 font-medium hover:bg-neutral-800 hover:text-white transition">
+                        Pelajari Lebih Lanjut
+                    </a>
+                </div>
+            </div>
+            <!-- Profile Photo with Elegant Frame -->
+            <div class="flex-shrink-0 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <!-- Outer Decorative Glowing Ring -->
+                    <div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-neutral-700 via-neutral-800 to-neutral-900 opacity-75 blur-sm"></div>
+                    <!-- Frame Container -->
+                    <div class="relative w-full h-full rounded-2xl bg-charcoal border border-neutral-700 p-3 shadow-2xl overflow-hidden flex items-center justify-center">
+                        <img src="rasya.jpeg" alt="Rasya Nur Alif" class="w-full h-full object-cover rounded-xl filter grayscale contrast-125 hover:grayscale-0 transition duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="scroll-mt-28">
+            <div class="border-b border-neutral-800 pb-4 mb-8 flex items-center gap-3">
+                <i class="fa-solid fa-user text-neutral-400 text-lg"></i>
+                <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Tentang Saya</h2>
+            </div>
+            <div class="bg-carddark border border-neutral-800/80 rounded-2xl p-6 md:p-8 shadow-xl relative overflow-hidden">
+                <!-- Subtle accent line -->
+                <div class="absolute top-0 left-0 w-1.5 h-full bg-neutral-600"></div>
+                <p class="text-neutral-300 leading-relaxed text-base md:text-lg text-justify">
+                    "Saya menguasai beberapa hal dalam bidang Teknik Komputer dan Jaringan (TKJ) yang telah dipelajari selama di SMK kelas XII. Saya memahami cara merakit, merawat, dan memperbaiki komputer, menginstal sistem operasi Windows dan Linux, serta menginstal aplikasi yang dibutuhkan. Selain itu, saya juga mempelajari cara membuat kabel jaringan UTP dengan konektor RJ45, mengatur IP Address, melakukan konfigurasi jaringan LAN dan WLAN, serta menghubungkan komputer ke jaringan internet. Saya juga memahami dasar-dasar konfigurasi router dan switch MikroTik, pengaturan access point, administrasi server, dan keamanan jaringan. Selain itu, mampu melakukan troubleshooting sederhana untuk mengatasi masalah pada komputer maupun jaringan. Dengan pengetahuan tersebut, saya dapat melakukan instalasi, konfigurasi, dan perawatan komputer serta jaringan sesuai dengan ilmu yang telah dipelajari selama di sekolah."
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. Education Section -->
+        <section id="education" class="scroll-mt-28">
+            <div class="border-b border-neutral-800 pb-4 mb-8 flex items-center gap-3">
+                <i class="fa-solid fa-graduation-cap text-neutral-400 text-lg"></i>
+                <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Pendidikan</h2>
+            </div>
+            <div class="grid grid-cols-1">
+                <div class="bg-carddark border border-neutral-800/80 rounded-2xl p-6 md:p-8 shadow-xl hover:border-neutral-700 transition duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                        <div>
+                            <span class="inline-block px-3 py-1 rounded-md bg-neutral-900 border border-neutral-800 text-xs font-semibold text-neutral-400 mb-2">Pendidikan Formal</span>
+                            <h3 class="text-xl md:text-2xl font-bold text-white">SMK 3 Perguruan Cikini</h3>
+                        </div>
+                        <div class="text-neutral-400 font-medium text-sm md:text-base bg-neutral-900/60 px-4 py-2 rounded-lg border border-neutral-800 w-fit">
+                            Kelas XII - Teknik Komputer dan Jaringan (TKJ)
+                        </div>
+                    </div>
+                    <p class="text-neutral-400 text-sm md:text-base leading-relaxed">
+                        Menempuh pendidikan kejuruan dengan fokus mendalam pada praktik laboratorium jaringan komputer, perakitan perangkat keras, administrasi sistem operasi, routing & switching, serta troubleshooting perangkat IT.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Skills Section -->
+        <section id="skills" class="scroll-mt-28">
+            <div class="border-b border-neutral-800 pb-4 mb-8 flex items-center gap-3">
+                <i class="fa-solid fa-screwdriver-wrench text-neutral-400 text-lg"></i>
+                <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Keahlian & Kompetensi</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Skill 1 -->
+                <div class="bg-carddark border border-neutral-800/80 rounded-2xl p-6 shadow-xl hover:border-neutral-600 transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-300 mb-4 group-hover:bg-neutral-800 transition">
+                        <i class="fa-solid fa-computer text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Perakitan, Perawatan & Perbaikan Komputer (Hardware)</h3>
+                    <p class="text-neutral-400 text-sm">Merakit komponen PC, pemeliharaan rutin, pembersihan, dan perbaikan perangkat keras bermasalah.</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="bg-carddark border border-neutral-800/80 rounded-2xl p-6 shadow-xl hover:border-neutral-600 transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-300 mb-4 group-hover:bg-neutral-800 transition">
+                        <i class="fa-brands fa-windows text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Instalasi OS (Windows & Linux) & Aplikasi</h3>
+                    <p class="text-neutral-400 text-sm">Instalasi sistem operasi Windows dan Linux, manajemen driver, serta konfigurasi software pendukung.</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="bg-carddark border border-neutral-800/80 rounded-2xl p-6 shadow-xl hover:border-neutral-600 transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-300 mb-4 group-hover:bg-neutral-800 transition">
+                        <i class="fa-solid fa-network-wired text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Pembuatan Kabel UTP (RJ45) & IP Addressing</h3>
+                    <p class="text-neutral-400 text-sm">Crimping kabel UTP tipe Straight/Cross dan konfigurasi IPv4/IPv6 address secara statis maupun dinamis.</p>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="bg-carddark border border-neutral-800/80 rounded-2xl p-6 shadow-xl hover:border-neutral-600 transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-300 mb-4 group-hover:bg-neutral-800 transition">
+                        <i class="fa-solid fa-wifi text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Konfigurasi Jaringan LAN, WLAN & Access Point</h3>
+                    <p class="text-neutral-400 text-sm">Membangun topologi jaringan LAN, setup perangkat wireless LAN, dan konfigurasi access point.</p>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="bg-carddark border border-neutral-800/80 rounded-2xl p-6 shadow-xl hover:border-neutral-600 transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-300 mb-4 group-hover:bg-neutral-800 transition">
+                        <i class="fa-solid fa-server text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Routing & Switching MikroTik</h3>
+                    <p class="text-neutral-400 text-sm">Konfigurasi router MikroTik, pengaturan DHCP Server, firewall filter rules, NAT, dan dasar routing.</p>
+                </div>
+
+                <!-- Skill 6 -->
+                <div class="bg-carddark border border-neutral-800/80 rounded-2xl p-6 shadow-xl hover:border-neutral-600 transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-300 mb-4 group-hover:bg-neutral-800 transition">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Administrasi Server & Keamanan Jaringan</h3>
+                    <p class="text-neutral-400 text-sm">Pengelolaan layanan server dasar serta penerapan langkah-langkah pengamanan jaringan komputer.</p>
+                </div>
+
+                <!-- Skill 7 -->
+                <div class="bg-carddark border border-neutral-800/80 rounded-2xl p-6 shadow-xl hover:border-neutral-600 transition duration-300 group md:col-span-2 lg:col-span-3">
+                    <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-300 mb-4 group-hover:bg-neutral-800 transition">
+                        <i class="fa-solid fa-stethoscope text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Troubleshooting Komputer & Jaringan</h3>
+                    <p class="text-neutral-400 text-sm">Analisis dan pemecahan masalah (troubleshooting) untuk mendiagnosis kendala pada perangkat keras, sistem, maupun konektivitas jaringan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact Section -->
+        <section id="contact" class="scroll-mt-28">
+            <div class="border-b border-neutral-800 pb-4 mb-8 flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-neutral-400 text-lg"></i>
+                <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Hubungi Saya</h2>
+            </div>
+            <div class="bg-carddark border border-neutral-800/80 rounded-2xl p-8 shadow-xl max-w-2xl mx-auto text-center space-y-6">
+                <p class="text-neutral-300 text-base">
+                    Tertarik berkolaborasi, berdiskusi mengenai proyek jaringan komputer, atau memerlukan bantuan teknis? Jangan ragu untuk menghubungi saya.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="mailto:rasya@example.com" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-neutral-900 border border-neutral-800 text-neutral-200 hover:bg-neutral-800 hover:text-white transition flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-paper-plane text-neutral-400"></i> Kirim Email
+                    </a>
+                    <a href="https://wa.me/" target="_blank" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-neutral-200 text-neutral-900 font-semibold hover:bg-white transition flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-800/80 py-8 text-center text-neutral-500 text-sm">
+        <p>&copy; 2026 Rasya Nur Alif. SMK 3 Perguruan Cikini. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
